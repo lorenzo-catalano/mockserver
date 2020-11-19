@@ -8,7 +8,7 @@ COPY package*.json /tmp/mockserver/
 
 RUN npm install
 
-COPY *.js /tmp/mockserver
+COPY *.js /tmp/mockserver/
 
 EXPOSE 9087
 CMD [ "node", "/tmp/mockserver/mockserver.js" ]
