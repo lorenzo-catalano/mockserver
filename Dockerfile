@@ -4,9 +4,7 @@ ENV SIMULATOR_PORT=9087
 
 WORKDIR /tmp/mockserver
 
-
-
-COPY package*.json /tmp/mockserver
+COPY package*.json /tmp/mockserver/
 
 RUN npm install
 
