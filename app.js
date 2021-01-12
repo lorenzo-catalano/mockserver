@@ -9,6 +9,7 @@ app.use(bodyParser.json());
 const basepath = "/tmp/mockserver/mocks/"
 
 var mockKey = process.env.MOCK_KEY
+mockKey && console.log('using mockkey = '+mockKey)
 
 app.all('/*', (request, response) => {
     console.log(request.body,request.path)
